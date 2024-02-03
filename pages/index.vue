@@ -15,14 +15,21 @@ const siteSettings = ref(
     siteTitle: "Yeerlo Personal - Home",
     siteDescription: "Yeerlo Personal  landing page website.",
     footerText: "Elevate Your Experience - Where Every Event Becomes Unforgettable",
-    socialLinks: {},
+    socialLinks: {
+      facebook:"#facebook",
+      twitter:"#tweet",
+      instagram:"#insta",
+      youtube:"#youtube",
+      tiktok:"#tiktok"
+
+    },
   }
 
 )
 const siteHero = ref(
   {
-    Header: "Find and listen Favorite Podcast on internet",
-    Paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, beatae omnis ipsa magnam neque ut nam nesciunt esse fugit praesentium hic magni possimus illo consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, beatae omnis ipsa magnam neque ut nam nesciunt esse fugit praesentium hic magni possimus illo consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, beatae omnis ipsa magnam neque ut nam nesciunt esse fugit praesentium hic magni possimus illo consequatur.",
+    Header: "Electrify Your Night: An Unforgettable Journey with MC Yeerlo",
+    Paragraph: "Join me for a night of electrifying beats and unforgettable moments. Dive into a world where comedy, music and magic meet. Get ready for an experience that will set your heart racing!",
     imgOne: "/images/sidebiew.webp",
     imgTwo: "/images/sidebiew.webp"
   }
