@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   modules: [
       '@nuxtjs/color-mode',
       '@nuxt/image',
+      'nuxt-swiper',
   ],
   css:[
       '~/assets/css/app.css'

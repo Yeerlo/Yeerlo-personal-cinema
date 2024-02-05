@@ -1,3 +1,10 @@
+<template>
+    <HomecinemaCinemaHeader :siteLogo="siteSettings.logo" :siteColor="siteColor"/>
+    <HomecinemaCinemaMain :siteColor="siteColor" :siteEvents="siteEvents"/>
+    <SectionsCallToAction :subscribeText="subscribeText" />
+    <AppFooter :siteSettings="siteSettings" :siteColor="siteColor" />
+</template>
+
 <script setup >
 const siteColor = ref(
   {
@@ -36,7 +43,7 @@ const siteHero = ref(
 )
 
 const siteEvents = ref(
-  [
+    [
   {
     "id": 1,
     "title": "The Secret Garden",
@@ -177,12 +184,3 @@ useHead({
 })
 
 </script>
-<template>
-  <div>
-    <AppHeader :siteLogo="siteSettings.logo" :siteColor="siteColor" />
-    <SectionsHomeHeroSection :siteHero="siteHero" :siteColor="siteColor" />
-    <SectionsHomePopularPodcasts :siteColor="siteColor" :siteEvents="siteEvents" />
-    <SectionsCallToAction :subscribeText="subscribeText" />
-    <AppFooter :siteSettings="siteSettings" :siteColor="siteColor" />
-  </div>
-</template>

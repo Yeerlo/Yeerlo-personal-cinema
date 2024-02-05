@@ -23,7 +23,7 @@
                 class="grid grid-cols-2 items-stretch sm:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-10 sm:gap-x-5 sm:gap-y-8">
 
                 <CardsPodCast v-for="(event, index) in siteEvents" :key="index" :title=event.title :href=event.link
-                    :duration=event.duration :cover-image=event.image :category=event.category :description=event.createdAt
+                    :duration=event.duration :cover-image=event.image :category=event.category :description=event.description
                     :siteColor="siteColor" />
 
             </div>

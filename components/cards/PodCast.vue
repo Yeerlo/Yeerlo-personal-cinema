@@ -15,6 +15,7 @@
                     class="font-semibold text-base md:text-lg lg:text-xl line-clamp-2 md:line-clamp-3 text-gray-700 dark:text-white">
                     {{ title }}
                 </h2>
+                <p class="mt-4  text-gray-700 dark:text-white"> {{ description }} </p>
             </div>
             <div class="pt-3 sm:pt-5 min-h-max h-max">
                 <NuxtLink :to="href"
@@ -25,7 +26,7 @@
                         :style="{ backgroundColor: siteColor.background }">
 
                     </span>
-                    <span class="relative flex items-center gap-3">
+                    <a :href="href" class="relative flex items-center gap-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                             fill="currentColor" class="w-3 h-3">
                             <path fill-rule="evenodd"
@@ -33,7 +34,7 @@
                                 clip-rule="evenodd" />
                         </svg>
                         Play now
-                    </span>
+                    </a>
                 </NuxtLink>
             </div>
         </div>

@@ -11,9 +11,9 @@ const { siteLogo, siteColor } = defineProps(['siteLogo', 'siteColor']);
                 <!-- app logo -->
                 <div class="inline-flex relative bg-inherit">
                     <NuxtLink to="/" class=" flex items-center gap-2">
-                        <nuxt-img :src="siteLogo.light" alt="In studio" width="500" height="auto" loading="lazy"
+                        <nuxt-img :src="siteLogo.light" alt="logo" width="500" height="auto" loading="lazy"
                             class="h-8 w-auto dark:hidden"/>
-                        <nuxt-img :src="siteLogo.dark" alt="In studio" width="500" height="auto" loading="lazy"
+                        <nuxt-img :src="siteLogo.dark" alt="logo" width="500" height="auto" loading="lazy"
                             class="h-8 w-auto hidden dark:block"/>
                     </NuxtLink>
                 </div>
