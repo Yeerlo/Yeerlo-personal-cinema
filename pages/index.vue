@@ -11,7 +11,7 @@ const changeSiteType = () => {
 
 const siteColor = ref(
   {
-    background: "",
+    background: "#f37e01",
     textcolor: "white"
   }
 )
