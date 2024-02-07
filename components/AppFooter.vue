@@ -44,7 +44,7 @@
                 <div class="flex justify-between items-center gap-5 text-gray-600 dark:text-gray-300">
                     <div class="">
                         &copy; {{ new Date().getFullYear() }} Allright Reserved. Powered by <NuxtLink target="_blank"
-                            to="https://yeerlo.com/" class="font-bold text-primary" :style="{ color: siteColor.background }">Yeerlo</NuxtLink>
+                            to="https://github.com/Yeerlo/Yeerlo-personal-cinema" class="font-bold text-primary" :style="{ color: siteColor.background }">Yeerlo</NuxtLink>
                     </div>
 
                     

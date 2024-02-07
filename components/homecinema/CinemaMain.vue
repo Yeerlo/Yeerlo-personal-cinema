@@ -30,7 +30,7 @@
                     </div>
                     <div class="md:block hidden h-[380px] w-[254px] mr-auto">
                         <div style="opacity: 1; transform: none">
-                            <img :src="event.image" alt="The Beekeeper" height="380" width="254"
+                            <img :src="event.image" :alt="event.title" height="380" width="254"
                                 class="h-[380px] w-[254px] object-cover rounded-xl shadow-lg transition-all duration-300 opacity-100">
                         </div>
                     </div>
@@ -51,12 +51,12 @@
                         href="/movie?type=popular">View all</a>
                 </div>
                 <div class="xs:min-h-[250px] min-h-[216px]">
-                    <Swiper :modules="[SwiperAutoplay]" :slides-per-view="auto" :spaceBetween="15" class="mySwiper">
+                    <Swiper :modules="[SwiperAutoplay]" :slides-per-view="'auto'" :loop="true" :spaceBetween="15" class="mySwiper">
                         <SwiperSlide v-for="(event, index) in siteEvents" :key="index"
                             class="flex !w-fit flex-col xs:gap-[14px] gap-2 max-w-[170px] rounded-lg"
                             style="margin-right: 15px;width: auto;">
                             <a class="dark:bg-[#1f1f1f] bg-[#f5f5f5] rounded-lg relative group w-[170px] select-none xs:h-[250px] h-[216px] overflow-hidden"
-                                href="/movie/787699"><img :src="event.image" :alt="event.title" height="250" width="170"
+                            :href="event.link"><img :src="event.image" :alt="event.title" height="250" width="170"
                                     style="
                             width: 100%;
                             height: 100%;
