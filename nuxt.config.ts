@@ -1,12 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   modules: [
+    "@pinia/nuxt",
       '@nuxtjs/color-mode',
       '@nuxt/image',
       'nuxt-swiper',
   ],
   css:[
-      '~/assets/css/app.css'
+      '~/assets/css/app.css',
+  ],
+  plugins: [
+    { src: '~/plugins/apexcharts.client.js', mode: 'client' },
   ],
   colorMode:{
       preference: 'system', // default value of $colorMode.preference
